@@ -4,18 +4,18 @@ public class DictionaryValue {
     private int id;
     private int intKey;
     private String stringKey;
-    private String name;
+    private String enumName;
     private String value;
 
     public DictionaryValue(){
 
     }
 
-    public DictionaryValue(int id, intKey, String stringKey, String name, String value){
+    public DictionaryValue(int id, int intKey, String stringKey, String enumName, String value) {
         this.id = id;
         this.intKey = intKey;
         this.stringKey = stringKey;
-        this.name = name;
+        this.enumName = enumName;
         this.value = value;
     }
 
@@ -30,13 +30,5 @@ public class DictionaryValue {
     public String getEnumName(){return enumName;}
     public void setEnumName(String enumName){this.enumName = enumName;}
 
-    @Override
-    public String toString() {
-        return "DictionaryValue{" +
-                "id=" + id +
-                ", intKey=" + intKey +
-                ", stringKey='" + stringKey + '\'' +
-                ", value='" + value + '\'' +
-                ", enumName='" + enumName + '\'' +
-                '}';
-}
+
+    }
